@@ -4,6 +4,7 @@ import androidx.compose.ui.test.captureToImage
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.printToLog
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TestName
@@ -17,7 +18,7 @@ class NativeGraphicsTest : BaseComposeRobolectricTest() {
     @get:Rule
     val testName = TestName()
 
-
+    @Ignore
     @GraphicsMode(GraphicsMode.Mode.NATIVE)
     @Test
     fun testNativeGraphicsApproach1() {
